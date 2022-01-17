@@ -41,6 +41,10 @@ ActiveRecord::Schema.define(version: 2022_01_15_010156) do
   end
 
   create_table "post_images", force: :cascade do |t|
+  
+    t.string "shop_name"
+    t.text "caption"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
